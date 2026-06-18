@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: enterprise-system-20260618-210228-2vna0tgmic3x-service
+spec:
+  selector:
+    app: enterprise-system-20260618-210228-2vna0tgmic3x
+  ports:
+  - port: 80
+    targetPort: 8000
+  type: ClusterIP
